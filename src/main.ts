@@ -11,7 +11,7 @@ async function bootstrap() {
     origin: [
       'http://localhost:3000',
       'http://localhost:3001',
-      'https://your-pet-client.vercel.app',
+      'https://pet-server-nvz5.onrender.com',
     ],
     methods: ['GET', 'POST', 'DELETE', 'PUT', 'PATCH'],
     credentials: true,
