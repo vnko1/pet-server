@@ -10,6 +10,10 @@ export const createNoticeSchema = z
       .string({ required_error: 'Name is required' })
       .min(2, 'Name must contain min 2 symbols')
       .max(15, 'Name must contain max 15 symbols'),
+    title: z
+      .string({ required_error: 'Title is required' })
+      .min(2, 'Title must contain min 2 symbols')
+      .max(30, 'Title must contain max 30 symbols'),
     date: z.coerce
       .date({ required_error: 'Date is required' })
       .min(new Date('2000-01-01'), 'Too old')
